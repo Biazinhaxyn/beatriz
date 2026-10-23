@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pedaços de Doçura: bombons artesanais e bolos no pote feitos com carinho.">
+  <title>Pedaços de Doçura | Confeitaria Artesanal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="topo">
+    <a href="#" class="logo">🍫 Pedaços <span>de Doçura</span></a>
+
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Cardápio</a>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <button class="carrinho-btn" id="abrir-carrinho">
+      🛒 Carrinho <span id="contador">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-texto">
+        <span class="etiqueta">FEITO COM AMOR ♡</span>
+        <h1>Pequenos doces,<br>grandes <span>felicidades.</span></h1>
+        <p>
+          Bombons irresistíveis e bolos no pote preparados
+          artesanalmente para deixar seu dia mais doce.
+        </p>
+        <a href="#produtos" class="botao-principal">Ver nosso cardápio →</a>
+        <div class="destaque">♡ Ingredientes selecionados · Muito carinho em cada receita</div>
+      </div>
+
+      <div class="hero-imagem">
+        <img
+          src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=85"
+          alt="Bolo artesanal de chocolate decorado">
+        <div class="selo">Feito à mão<br><strong>com amor!</strong></div>
+      </div>
+    </section>
+
+    <section class="beneficios">
+      <div>🍫 <span>Chocolate de qualidade</span></div>
+      <div>🎂 <span>Produção artesanal</span></div>
+      <div>🎁 <span>Perfeito para presentear</span></div>
+    </section>
+
+    <section class="cardapio" id="produtos">
+      <div class="secao-titulo">
+        <span class="etiqueta">NOSSO CARDÁPIO</span>
+        <h2>Um pedacinho de <span>felicidade</span></h2>
+        <p>Escolha seu favorito e adoce o seu dia!</p>
+      </div>
+
+      <div class="filtros">
+        <button class="filtro ativo" data-categoria="todos">Todos</button>
+        <button class="filtro" data-categoria="bombons">Bombons</button>
+        <button class="filtro" data-categoria="bolos">Bolos no pote</button>
+      </div>
+
+      <div class="produtos-grid" id="lista-produtos">
+        <!-- Os produtos serão inseridos pelo JavaScript -->
+      </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <div class="sobre-imagem">
+        <img
+          src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=85"
+          alt="Doces artesanais de chocolate">
+      </div>
+      <div class="sobre-texto">
+        <span class="etiqueta">NOSSA HISTÓRIA</span>
+        <h2>Feito com carinho,<br><span>pensado para você.</span></h2>
+        <p>
+          Na Pedaços de Doçura, acreditamos que os pequenos momentos
+          merecem grandes sabores. Cada doce é preparado com cuidado
+          para transformar momentos simples em lembranças especiais.
+        </p>
+        <p>Seu dia merece um pouquinho mais de doçura! ♡</p>
+      </div>
+    </section>
+
+    <section class="contato" id="contato">
+      <span class="etiqueta">VAMOS ADOÇAR SEU DIA?</span>
+      <h2>Seu próximo doce favorito está aqui!</h2>
+      <p>Escolha suas delícias e faça seu pedido pelo WhatsApp.</p>
+      <a class="botao-principal" id="pedido-geral"
+         href="https://wa.me/5500000000000" target="_blank"
+         rel="noopener noreferrer">Fazer meu pedido 💬</a>
+      <small>Consulte disponibilidade, entrega e formas de pagamento.</small>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#inicio" class="logo">🍫 Pedaços <span>de Doçura</span></a>
+    <p>Feito com amor e uma pitada de felicidade. ♡</p>
+    <p class="copyright">© <span id="ano"></span> Pedaços de Doçura.</p>
+  </footer>
+
+  <div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
